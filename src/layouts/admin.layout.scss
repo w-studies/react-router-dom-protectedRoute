@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  flex-direction: column;
+  flex: 1;
+}
+
+div#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  padding: 0;
+  min-height: 100%;
+  justify-content: center !important;
+  align-items: center;
+}
+
+div.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  min-height: 100%;
+
+  .app-header,
+  .app-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    align-items: center;
+    height: 55px;
+    border: thin solid pink;
+  }
+
+  main {
+    display: flex;
+    flex-grow: 1;
+
+    aside.sidebar {
+      width: 200px;
+      border: thin solid pink;
+    }
+
+    .content {
+      width: 100%;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+  }
+}
