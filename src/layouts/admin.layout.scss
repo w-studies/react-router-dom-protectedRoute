@@ -43,6 +43,15 @@ div.app {
     aside.sidebar {
       width: 200px;
       border: thin solid pink;
+
+      nav {
+        padding: 0 12px;
+        text-align: left;
+
+        a {
+          display: block
+        }
+      }
     }
 
     .content {
