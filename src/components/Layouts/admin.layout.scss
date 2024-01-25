@@ -26,6 +26,14 @@ div.app {
   flex-grow: 1;
   min-height: 100%;
 
+  .app-header {
+    border-bottom: thin solid pink;
+  }
+
+  .app-footer {
+    border-top: thin solid pink;
+  }
+
   .app-header,
   .app-footer {
     display: flex;
@@ -33,7 +41,6 @@ div.app {
     padding: 0 12px;
     align-items: center;
     height: 55px;
-    border: thin solid pink;
   }
 
   main {
@@ -42,7 +49,7 @@ div.app {
 
     aside.sidebar {
       width: 200px;
-      border: thin solid pink;
+      border-right: thin solid pink;
 
       nav {
         padding: 0 12px;

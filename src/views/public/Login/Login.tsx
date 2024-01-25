@@ -1,9 +1,12 @@
 import { useAuthContext } from '@/contexts/useAuthContext'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const auth = useAuthContext()
   const navigate = useNavigate()
+  const location = useLocation()
+
+  const from = location.state?.from?.pathname || 'admin'
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
@@ -17,7 +20,7 @@ const Login = () => {
       // when they get to the protected page and click the back button, they
       // won't end up back on the login page, which is also really nice for the
       // user experience.
-      navigate('admin', { replace: true })
+      navigate(from, { replace: true })
     })
   }
   return (
@@ -25,7 +28,12 @@ const Login = () => {
       <form method="post" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
-          <input type="text" name="username" autoFocus defaultValue="any username" />
+          <input
+            type="text"
+            name="username"
+            autoFocus
+            defaultValue="any username"
+          />
         </div>
         <div>
           <label htmlFor="password">Password</label>
@@ -38,10 +46,11 @@ const Login = () => {
       <p>
         Edit <code>src/App.tsx</code> and save to test HMR
       </p>
-      <p>
-        <Link to="/admin">Try this protectec route: /admin</Link>
-      </p>
-      <Link to="/admin/users">Try this protectec route: /admin/users</Link>
+      Try this protectec routes
+      <br />
+      <Link to="/admin/products">/admin/products</Link>
+      <br />
+      <Link to="/admin/users">/admin/users</Link>
     </div>
   )
 }

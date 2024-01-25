@@ -1,5 +1,5 @@
 import { AuthContext } from '@/contexts'
-import { AuthService } from '@/services/AuthService'
+import { AuthService } from '@/services'
 import React from 'react'
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {

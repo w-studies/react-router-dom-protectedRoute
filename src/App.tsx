@@ -1,9 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
-import './App.scss'
-import { DefaultLayout } from './layouts/DefaultLayout'
-import { Login } from './views/Login'
-import { AdminLayout } from './layouts/AdminLayout'
-import { AuthProvider } from './providers/AuthProvider'
+import './scss/App.scss'
+import { Login } from './views/public/Login'
+import { AdminLayout, DefaultLayout } from './components'
+import { AuthProvider } from './providers'
 
 function App() {
   return (

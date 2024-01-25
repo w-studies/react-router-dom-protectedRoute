@@ -19,6 +19,6 @@ export const routes = [
   {
     path: '*',
     name: '404',
-    Component: lazy(() => import('@/views/pages/404'))
+    Component: lazy(() => import('@/views/public/404'))
   }
 ]
