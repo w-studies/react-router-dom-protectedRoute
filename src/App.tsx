@@ -1,8 +1,10 @@
-import { Route, Routes } from 'react-router-dom'
 import './scss/App.scss'
-import { Login } from './views/public/Login'
+
+import { Route, Routes } from 'react-router-dom'
+
 import { AdminLayout, DefaultLayout } from './components'
 import { AuthProvider } from './providers'
+import { Login } from './views/public/Login'
 
 function App() {
   return (

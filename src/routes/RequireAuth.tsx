@@ -1,5 +1,6 @@
-import { useAuthContext } from '@/contexts/useAuthContext'
 import { Navigate, useLocation } from 'react-router-dom'
+
+import { useAuthContext } from '@/contexts/useAuthContext'
 
 export const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const auth = useAuthContext()

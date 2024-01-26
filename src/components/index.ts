@@ -1,1 +1,1 @@
-export { DefaultLayout, AdminLayout } from './Layouts'
+export { AdminLayout,DefaultLayout } from './Layouts'

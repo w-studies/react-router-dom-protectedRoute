@@ -1,5 +1,6 @@
-import { useAuthContext } from '@/contexts/useAuthContext'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+
+import { useAuthContext } from '@/contexts/useAuthContext'
 
 const Login = () => {
   const auth = useAuthContext()

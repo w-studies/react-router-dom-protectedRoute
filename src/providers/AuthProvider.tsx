@@ -1,6 +1,7 @@
+import React from 'react'
+
 import { AuthContext } from '@/contexts'
 import { AuthService } from '@/services'
-import React from 'react'
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = React.useState<string | undefined>()

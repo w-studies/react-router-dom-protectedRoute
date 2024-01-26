@@ -1,5 +1,7 @@
 import './admin.layout.scss'
+
 import { RequireAuth, routes } from '@/routes'
+
 import { Header, Sidebar, Stage } from './_AdminPartials'
 export const AdminLayout = () => {
   return (

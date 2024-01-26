@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { RoutesProps } from '../Types'
+
+import { RoutesProps } from '@/components/Layouts/Types'
 
 export const Stage = ({ routes }: { routes: RoutesProps[] }) => {
   return (

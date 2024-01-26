@@ -1,5 +1,6 @@
-import { useAuthContext } from '@/contexts/useAuthContext'
 import { Link, useNavigate } from 'react-router-dom'
+
+import { useAuthContext } from '@/contexts/useAuthContext'
 
 export const Header = () => {
   const navigate = useNavigate()
