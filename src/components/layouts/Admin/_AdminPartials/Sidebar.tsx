@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { RoutesProps } from '@/components/Layouts/Types'
+import { RoutesProps } from '@/components/layouts/Types'
 
 export const Sidebar = ({ routes }: { routes: RoutesProps[] }) => {
   return (
